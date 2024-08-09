@@ -1,8 +1,9 @@
+/* eslint-disable camelcase */
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Nova_Round } from 'next/font/google'
 import '../assets/styles/globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Nova_Round({ subsets: ['latin'], weight: '400' })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
