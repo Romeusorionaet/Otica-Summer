@@ -2,6 +2,7 @@
 import type { Metadata } from 'next'
 import { Nova_Round } from 'next/font/google'
 import '../assets/styles/globals.css'
+import '../assets/styles/section-gallery.css'
 
 const inter = Nova_Round({ subsets: ['latin'], weight: '400' })
 

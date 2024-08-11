@@ -27,7 +27,9 @@ export default function Home() {
           </section>
 
           <section className="flex h-[800px] w-full flex-col items-center justify-center rounded-b-lg bg-blue_1 p-4 md:pt-44">
-            <CarrouselGlasses />
+            <div className="-mt-32">
+              <CarrouselGlasses />
+            </div>
             <h2 className="mx-4 mt-10 text-center text-2xl font-bold md:text-3xl">
               <span className="text-clVRef">Olhos</span> no futuro:{' '}
               <span className="text-clVRef">visão</span> perfeita, estilo
@@ -38,7 +40,7 @@ export default function Home() {
 
         <section
           id="second-section"
-          className="mx-auto -mt-24 flex w-full max-w-[1680px] flex-col items-center justify-center gap-10 rounded-lg bg-slate-800 p-4 md:mt-44 md:h-[500px] md:flex-row"
+          className="mx-auto -mt-24 flex w-full max-w-[1680px] flex-col items-center justify-center gap-10 rounded-lg bg-slate-800 p-4 md:mt-24 md:h-[500px] md:flex-row"
         >
           <div className="h-full w-96">
             <Image
@@ -46,7 +48,7 @@ export default function Home() {
               height={300}
               src="/img/people-models/woman-2.png"
               alt=""
-              className="h-full w-full rounded-lg object-fill"
+              className="h-full w-full rounded-lg"
             />
           </div>
           <div className="w-full space-y-4 text-center text-blue_1 md:w-1/2 md:text-xl">
@@ -68,6 +70,70 @@ export default function Home() {
               Não é apenas uma ótica! É um compromisso com o seu conforto visual
               e bem-estar.
             </p>
+          </div>
+        </section>
+
+        <section id="third-section" className="gallery">
+          <div className="gallery-item flex flex-col bg-blue-500">
+            <div className="h-full w-full">
+              <Image
+                width={300}
+                height={300}
+                src="/img/people-models/model-3.png"
+                alt=""
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+
+          <div className="gallery-item">
+            <Image
+              width={300}
+              height={300}
+              src="/img/people-models/model-6.png"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </div>
+
+          <div className="gallery-item">
+            <Image
+              width={300}
+              height={300}
+              src="/img/glasses/glasses-2.png"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </div>
+
+          <div className="gallery-item flex gap-6">
+            <div className="h-full w-full">
+              <Image
+                width={300}
+                height={300}
+                src="/img/people-models/model-1.png"
+                alt=""
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="h-full w-full">
+              <Image
+                width={300}
+                height={300}
+                src="/img/people-models/model-5.png"
+                alt=""
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="h-full w-full">
+              <Image
+                width={300}
+                height={300}
+                src="/img/glasses/glasses-1.png"
+                alt=""
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
         </section>
       </main>
