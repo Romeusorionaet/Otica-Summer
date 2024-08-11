@@ -2,7 +2,7 @@
 
 import { useKeenSliderMode } from '@/hooks/use-keen-slider-mode'
 import Image from 'next/image'
-import { Arrow } from './arros-carousel'
+import { Arrow } from './arrows-carousel'
 
 export function CarrouselGlasses() {
   const { sliderRef, currentSlide, instanceRef } = useKeenSliderMode()
@@ -15,8 +15,8 @@ export function CarrouselGlasses() {
             key={index}
             className="keen-slider__slide relative flex p-10 lg:p-16"
           >
-            <div className="absolute left-10 h-[14rem] w-[200px] rotate-12 rounded-lg bg-cyan-100 lg:left-16 lg:w-[280px]" />
-            <div className="z-10 h-[14rem] w-full rounded-lg bg-cyan-50 shadow-2xl">
+            <div className="absolute left-10 h-[14rem] w-[200px] rotate-12 rounded-lg bg-blue_3 lg:left-16 lg:w-[280px]" />
+            <div className="z-10 h-[14rem] w-full rounded-lg bg-blue_2 shadow-2xl">
               <Image
                 width={300}
                 height={300}

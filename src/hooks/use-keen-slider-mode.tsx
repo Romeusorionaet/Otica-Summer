@@ -1,7 +1,7 @@
 'use client'
 
 import { useKeenSlider } from 'keen-slider/react'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 export function useKeenSliderMode() {
   const [widthScreen, setWidthScreen] = useState<number>()
@@ -15,22 +15,30 @@ export function useKeenSliderMode() {
     }
   }, [widthScreen])
 
-  const animation = { duration: 30000, easing: (t: number) => t }
+  const animation = useMemo(() => {
+    return { duration: 300, easing: (t: number) => t }
+  }, [])
 
-  const [autoSliderRef] = useKeenSlider<HTMLDivElement>({
+  const [autoSliderRef, slider] = useKeenSlider<HTMLDivElement>({
     loop: true,
     renderMode: 'performance',
     drag: true,
-    created(s) {
-      s.moveToIdx(5, true, animation)
-    },
-    updated(s) {
-      s.moveToIdx(s.track.details.abs + 5, true, animation)
-    },
-    animationEnded(s) {
-      s.moveToIdx(s.track.details.abs + 5, true, animation)
-    },
   })
+
+  const duration = 3000
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (slider.current) {
+        const currentIdx = slider.current.track.details.rel
+        slider.current.moveToIdx(currentIdx + 1, true, animation)
+      }
+    }, duration)
+
+    return () => {
+      clearInterval(interval)
+    }
+  }, [animation, slider])
 
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
