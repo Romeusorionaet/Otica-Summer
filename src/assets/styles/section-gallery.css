@@ -8,7 +8,7 @@
           'A C'
           'D D';
         grid-gap: 6px;
-        max-width: 1000px;
+        width: 100%;
         max-height: 800px;
         margin: 100px auto;
         padding: 10px;

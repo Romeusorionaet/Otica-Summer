@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply bg-blue_1 text-slate-700
+    @apply bg-clRef_2 text-clRef_5
   }
 }

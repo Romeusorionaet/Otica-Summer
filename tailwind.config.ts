@@ -10,10 +10,11 @@ const config: Config = {
     extend: {
       colors: {
         clVRef: 'rgb(253, 186, 116)',
-        blue_1: 'rgb(239 246 255)',
-        blue_2: 'rgb(236, 254, 255)',
-        blue_3: 'rgb(207, 250, 254)',
-        blue_4: 'rgb(30, 64, 175)',
+        clRef_1: 'rgb(246, 254, 255)',
+        clRef_2: 'rgb(236, 254, 255)',
+        clRef_3: 'rgb(253, 186, 116)',
+        clRef_4: 'rgb(30, 64, 175)',
+        clRef_5: 'rgb(30, 41, 59)',
       },
     },
   },

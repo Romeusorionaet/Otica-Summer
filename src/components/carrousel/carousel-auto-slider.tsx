@@ -20,7 +20,7 @@ export function CarouselAutoSlider() {
   return (
     <div
       ref={autoSliderRef}
-      className="mx-auto flex h-1/2 w-60 overflow-hidden rounded-b-lg bg-blue_2"
+      className="mx-auto flex h-1/2 w-60 overflow-hidden rounded-b-lg bg-clRef_1"
     >
       {imgList.map((item) => {
         return (
