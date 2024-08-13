@@ -103,9 +103,12 @@ export default function Home() {
             </section>
 
             <div className="absolute bottom-0 flex w-full justify-center p-4">
-              <button className="relative z-10 rounded-lg border border-clRef_5 p-2 duration-700 hover:scale-105">
+              <Link
+                href="https://api.whatsapp.com/send/?phone=5584981127596&text&type=phone_number&app_absent=0"
+                className="relative z-10 rounded-lg border border-clRef_5 p-2 duration-700 hover:scale-105"
+              >
                 Agende sua Consulta
-              </button>
+              </Link>
             </div>
           </section>
         </section>
@@ -253,7 +256,7 @@ export default function Home() {
             </div>
 
             <Link
-              href="#"
+              href="/catalog"
               className="absolute bottom-10 right-10 rounded-lg border border-black p-2 duration-700 hover:scale-105"
             >
               Ver mais
