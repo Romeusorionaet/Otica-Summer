@@ -9,18 +9,18 @@ export function CarouselAutoSlider() {
   const imgList = [
     {
       id: 'de3245',
-      src: '/img/people-models/woman-2.png',
+      src: '/img/glasses/glasses-1.png',
     },
     {
       id: '54d68r',
-      src: '/img/people-models/woman-1.png',
+      src: '/img/glasses/glasses-2.png',
     },
   ]
 
   return (
     <div
       ref={autoSliderRef}
-      className="mx-auto flex h-1/2 w-60 overflow-hidden rounded-b-lg bg-clRef_1"
+      className="relative mx-auto flex h-1/2 w-60 overflow-hidden rounded-b-lg bg-clRef_1"
     >
       {imgList.map((item) => {
         return (

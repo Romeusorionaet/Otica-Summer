@@ -4,6 +4,33 @@
 
 @layer base {
   body {
-    @apply bg-clRef_2 text-clRef_5
+    @apply bg-clRef_2 text-clRef_5 antialiased
+  }
+}
+
+@layer utilities {
+  /*  #fourth-section */
+
+  #fourth-section > article > h3 {
+    @apply font-bold text-3xl
+  }
+
+  #fourth-section > article {
+    @apply flex h-96 w-80 flex-col items-center justify-start gap-10 rounded-lg bg-clRef_5 p-2
+  }
+
+  /* #fiveth-section */
+
+  #fifth-section > section > article {
+    @apply w-[30rem] space-y-4 rounded-lg px-4
+           md:h-[24rem]
+  }
+
+  #fifth-section > section > article > h3 {
+    @apply font-bold text-3xl
+  }
+
+  #fifth-section > section > article > ul {
+    @apply list-inside list-disc space-y-4
   }
 }
