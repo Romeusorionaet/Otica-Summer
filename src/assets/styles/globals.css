@@ -11,13 +11,17 @@
 @layer utilities {
   /*  #fourth-section */
 
+  #fourth-section > article {
+    @apply flex h-96 w-80 flex-col items-center justify-start gap-10 rounded-lg bg-clRef_5 p-2
+  }
+
   #fourth-section > article > h3 {
     @apply font-bold text-3xl
   }
 
-  #fourth-section > article {
-    @apply flex h-96 w-80 flex-col items-center justify-start gap-10 rounded-lg bg-clRef_5 p-2
-  }
+  #fourth-section > article > p {
+    @apply leading-loose
+  }  
 
   /* #fiveth-section */
 

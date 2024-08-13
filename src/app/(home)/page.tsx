@@ -5,8 +5,16 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import Image from 'next/image'
 import { SquareWithSocialMedia } from './components/square-with-social-media'
 import Link from 'next/link'
+import { Footer } from '@/components/footer'
 
 export default function Home() {
+  const cityName = 'Canguaretama'
+  const streetName = 'Rua mestre josé alfredo'
+
+  const mapURL = `https://maps.google.com/maps?q=${encodeURIComponent(
+    streetName + ', ' + cityName,
+  )}&output=embed`
+
   return (
     <div>
       <Header />
@@ -385,7 +393,26 @@ export default function Home() {
             </article>
           </section>
         </section>
+
+        <section
+          id="sixth-section"
+          className="mx-auto mt-28 w-full max-w-[1680px] rounded-lg bg-clRef_5 p-4"
+        >
+          <h2 className="text-2xl font-bold text-clRef_1">Nossa Localização</h2>
+
+          <div className="mt-10 h-[20rem]">
+            <iframe
+              width="100%"
+              height="100%"
+              loading="lazy"
+              allowFullScreen
+              src={mapURL}
+            ></iframe>
+          </div>
+        </section>
       </main>
+
+      <Footer />
     </div>
   )
 }
