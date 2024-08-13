@@ -1,10 +1,13 @@
-/* eslint-disable camelcase */
 import type { Metadata } from 'next'
 import { Nova_Round } from 'next/font/google'
 import '../assets/styles/globals.css'
 import '../assets/styles/section-gallery.css'
 
-const inter = Nova_Round({ subsets: ['latin'], weight: '400' })
+const NR = Nova_Round({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-NR',
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${inter.className}`}>{children}</body>
+      <body className={`${NR.variable}`}>{children}</body>
     </html>
   )
 }

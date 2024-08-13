@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-clRef_2 text-clRef_5 antialiased
+    @apply bg-clRef_2 text-clRef_5 antialiased font-NR
   }
 }
 

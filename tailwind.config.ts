@@ -11,10 +11,13 @@ const config: Config = {
       colors: {
         clVRef: 'rgb(253, 186, 116)',
         clRef_1: 'rgb(246, 254, 255)',
-        clRef_2: 'rgb(236, 254, 255)',
-        clRef_3: 'rgb(253, 186, 116)',
+        clRef_2: 'rgb(416, 854, 955)',
         clRef_4: 'rgb(30, 64, 175)',
         clRef_5: 'rgb(30, 41, 59)',
+      },
+
+      fontFamily: {
+        NR: 'var(--font-NR)',
       },
     },
   },

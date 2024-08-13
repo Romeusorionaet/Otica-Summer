@@ -4,7 +4,7 @@ import { InstagramLogo, PhoneCall, WhatsappLogo } from 'phosphor-react'
 
 export function Footer() {
   return (
-    <footer className="mt-20 bg-white p-8 md:rounded-md">
+    <footer className="mt-20 p-8 md:rounded-md">
       <div className="flex justify-center gap-8 max-md:flex-col">
         <div className="flex flex-col gap-8">
           <p>Ótica Summer [data-da-ótica]. Todos os direitos reservados.</p>
@@ -15,11 +15,17 @@ export function Footer() {
             <span>fulanodetal@gmail.com</span>
 
             <div className="flex gap-4">
-              <a href="#">
+              <a
+                href="https://api.whatsapp.com/send/?phone=5584981127596&text&type=phone_number&app_absent=0"
+                target="_blank"
+              >
                 <WhatsappLogo size={32} />
               </a>
 
-              <a href="#">
+              <a
+                href="https://www.instagram.com/romeusoaresdesouto/"
+                target="_blank"
+              >
                 <InstagramLogo size={32} />
               </a>
             </div>
