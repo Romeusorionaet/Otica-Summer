@@ -2,6 +2,7 @@ import { ShareNetwork, X } from 'phosphor-react'
 import Image from 'next/image'
 import { useState } from 'react'
 import { GlassesProps } from './main'
+import { OrderProduct } from '@/components/order-product'
 
 interface Props {
   showDetails: boolean
@@ -70,8 +71,10 @@ export function ModalDetails({
 
           <p className="text-sm md:text-base">{selectedGlasses.description}</p>
 
-          <footer className="mt-4 flex justify-around">
-            <span className="text-green-500">{selectedGlasses.price} R$</span>
+          <footer className="mt-4 flex items-center justify-start gap-4 text-sm">
+            <span className="text-green-500">{selectedGlasses.price} $</span>
+
+            <OrderProduct />
           </footer>
         </div>
       </article>

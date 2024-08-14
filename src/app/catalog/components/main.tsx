@@ -4,8 +4,9 @@ import { ControlButtonsPagination } from '@/components/control-buttons-paginatio
 import Image from 'next/image'
 import { Pagination } from '@/utils/pagination'
 import glasses from '@/lib/glasses.json'
-import { useState } from 'react'
+import { Suspense, useState } from 'react'
 import { ModalDetails } from './modal-details'
+import { FormInputSearch } from '@/components/form-input-search'
 
 export interface GlassesProps {
   id: string
@@ -20,9 +21,11 @@ export function Main() {
   const [selectedGlasses, setSelectedGlasses] = useState<GlassesProps | null>(
     null,
   )
+  const [filteredGlasses, setFilteredGlasses] =
+    useState<GlassesProps[]>(glasses)
 
   const { next, prev, currentData, currentPage, maxPage } = Pagination(
-    glasses || [],
+    filteredGlasses,
     11,
   )
 
@@ -31,8 +34,27 @@ export function Main() {
     setShowDetails(true)
   }
 
+  const handleSubmit = async (query: string) => {
+    if (query) {
+      const filtered = glasses.filter(
+        (item) =>
+          item.type.toLowerCase().includes(query.toLowerCase()) ||
+          item.description.toLowerCase().includes(query.toLowerCase()),
+      )
+      setFilteredGlasses(filtered)
+    } else {
+      setFilteredGlasses(glasses)
+    }
+  }
+
   return (
     <main className="pt-56">
+      <Suspense fallback={null}>
+        <div className="my-10 px-1">
+          <FormInputSearch handleSubmit={handleSubmit} />
+        </div>
+      </Suspense>
+
       <section className="mx-auto flex w-full max-w-[1000px] flex-col gap-10 p-4">
         <div className="flex flex-wrap items-center justify-center gap-4">
           {currentData().map((item: GlassesProps) => (
