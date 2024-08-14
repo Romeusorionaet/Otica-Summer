@@ -1,4 +1,4 @@
-import { X } from 'phosphor-react'
+import { ShareNetwork, X } from 'phosphor-react'
 import Image from 'next/image'
 import { useState } from 'react'
 import { GlassesProps } from './main'
@@ -75,6 +75,10 @@ export function ModalDetails({
           </footer>
         </div>
       </article>
+
+      <button className="absolute bottom-4 text-blue-500 max-md:left-4 md:bottom-4 md:right-4">
+        <ShareNetwork size={28} />
+      </button>
     </section>
   )
 }

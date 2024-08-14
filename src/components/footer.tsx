@@ -16,8 +16,9 @@ export function Footer() {
 
             <div className="flex gap-4">
               <a
-                href="https://api.whatsapp.com/send/?phone=5584981127596&text&type=phone_number&app_absent=0"
+                href="https://wa.me/5584981127596?text=Ol%C3%A1,%20vim%20pelo%20site!"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <WhatsappLogo size={32} />
               </a>
@@ -25,6 +26,7 @@ export function Footer() {
               <a
                 href="https://www.instagram.com/romeusoaresdesouto/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <InstagramLogo size={32} />
               </a>
