@@ -1,7 +1,7 @@
 [
     {
       "id": "qw728d",
-      "type": "resina",
+      "type": "Vidro",
       "img": "/img/glasses/glasses-2.png",
       "price": "200",
       "description": "Lentes de grau em policarbonato, leves e resistentes, com opções esféricas e asféricas. Disponíveis em índices de refração de 1.5 a 1.74, com tratamentos antirreflexo, hidrofóbico, e proteção UV400."
@@ -36,6 +36,55 @@
     },
     {
       "id": "q2328d",
+      "type": "resina",
+      "img": "/img/glasses/glasses-2.png",
+      "price": "200",
+      "description": "Lentes de grau em policarbonato, leves e resistentes, com opções esféricas e asféricas. Disponíveis em índices de refração de 1.5 a 1.74, com tratamentos antirreflexo, hidrofóbico, e proteção UV400."
+    },
+    {
+      "id": "qwth8d",
+      "type": "resina",
+      "img": "/img/glasses/glasses-2.png",
+      "price": "200",
+      "description": "Lentes de grau em policarbonato, leves e resistentes, com opções esféricas e asféricas. Disponíveis em índices de refração de 1.5 a 1.74, com tratamentos antirreflexo, hidrofóbico, e proteção UV400."
+    },
+    {
+      "id": "4wth2d",
+      "type": "resina",
+      "img": "/img/glasses/glasses-2.png",
+      "price": "200",
+      "description": "Lentes de grau em policarbonato, leves e resistentes, com opções esféricas e asféricas. Disponíveis em índices de refração de 1.5 a 1.74, com tratamentos antirreflexo, hidrofóbico, e proteção UV400."
+    },
+    {
+      "id": "5wth8r",
+      "type": "resina",
+      "img": "/img/glasses/glasses-2.png",
+      "price": "200",
+      "description": "Lentes de grau em policarbonato, leves e resistentes, com opções esféricas e asféricas. Disponíveis em índices de refração de 1.5 a 1.74, com tratamentos antirreflexo, hidrofóbico, e proteção UV400."
+    },
+    {
+      "id": "kwth8d",
+      "type": "resina",
+      "img": "/img/glasses/glasses-2.png",
+      "price": "200",
+      "description": "Lentes de grau em policarbonato, leves e resistentes, com opções esféricas e asféricas. Disponíveis em índices de refração de 1.5 a 1.74, com tratamentos antirreflexo, hidrofóbico, e proteção UV400."
+    },
+    {
+      "id": "78th8d",
+      "type": "resina",
+      "img": "/img/glasses/glasses-2.png",
+      "price": "200",
+      "description": "Lentes de grau em policarbonato, leves e resistentes, com opções esféricas e asféricas. Disponíveis em índices de refração de 1.5 a 1.74, com tratamentos antirreflexo, hidrofóbico, e proteção UV400."
+    },
+    {
+      "id": "qw459d",
+      "type": "resina",
+      "img": "/img/glasses/glasses-2.png",
+      "price": "200",
+      "description": "Lentes de grau em policarbonato, leves e resistentes, com opções esféricas e asféricas. Disponíveis em índices de refração de 1.5 a 1.74, com tratamentos antirreflexo, hidrofóbico, e proteção UV400."
+    },
+    {
+      "id": "snmc8e",
       "type": "resina",
       "img": "/img/glasses/glasses-2.png",
       "price": "200",
