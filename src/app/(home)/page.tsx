@@ -42,9 +42,9 @@ export default function Home() {
               <div className="gallery-item flex flex-col bg-blue-500">
                 <div className="h-full w-full">
                   <Image
-                    width={300}
-                    height={300}
-                    src="/img/people-models/model-3.png"
+                    width={900}
+                    height={900}
+                    src="/img/people-models/model-10.png"
                     alt=""
                     className="h-full w-full object-cover"
                   />
@@ -53,48 +53,48 @@ export default function Home() {
 
               <div className="gallery-item">
                 <Image
-                  width={300}
-                  height={300}
-                  src="/img/people-models/model-6.png"
-                  alt=""
-                  className="h-full w-full object-cover"
-                />
-              </div>
-
-              <div className="gallery-item">
-                <Image
-                  width={300}
-                  height={300}
+                  width={900}
+                  height={900}
                   src="/img/glasses/glasses-2.png"
                   alt=""
                   className="h-full w-full object-cover"
                 />
               </div>
 
-              <div className="gallery-item flex gap-6">
+              <div className="gallery-item">
+                <Image
+                  width={900}
+                  height={900}
+                  src="/img/people-models/model-7.png"
+                  alt=""
+                  className="h-full w-full object-cover"
+                />
+              </div>
+
+              <div className="gallery-item flex gap-2">
                 <div className="h-full w-full">
                   <Image
-                    width={300}
-                    height={300}
-                    src="/img/people-models/model-1.png"
+                    width={900}
+                    height={900}
+                    src="/img/people-models/model-9.png"
                     alt=""
                     className="h-full w-full object-cover"
                   />
                 </div>
                 <div className="h-full w-full">
                   <Image
-                    width={300}
-                    height={300}
-                    src="/img/people-models/model-5.png"
+                    width={900}
+                    height={900}
+                    src="/img/glasses/glasses-2.png"
                     alt=""
                     className="h-full w-full object-cover"
                   />
                 </div>
                 <div className="h-full w-full">
                   <Image
-                    width={300}
-                    height={300}
-                    src="/img/glasses/glasses-1.png"
+                    width={900}
+                    height={900}
+                    src="/img/people-models/model-8.png"
                     alt=""
                     className="h-full w-full object-cover"
                   />
@@ -123,7 +123,7 @@ export default function Home() {
             <Image
               width={300}
               height={300}
-              src="/img/people-models/woman-2.png"
+              src="/img/people-models/model-11.png"
               alt=""
               className="h-full w-full rounded-lg"
             />
@@ -165,9 +165,9 @@ export default function Home() {
               <div className="flex h-28 w-full items-center justify-center max-md:gap-4 md:px-16">
                 <div className="h-40 w-full max-w-[350px]">
                   <Image
-                    width={300}
-                    height={300}
-                    src="/img/glasses/glasses-1.png"
+                    width={900}
+                    height={900}
+                    src="/img/glasses/glasses-7.png"
                     alt=""
                     className="h-full w-full rounded-lg object-contain"
                   />
@@ -175,9 +175,9 @@ export default function Home() {
 
                 <div className="h-40 w-full max-w-[350px]">
                   <Image
-                    width={300}
-                    height={300}
-                    src="/img/glasses/glasses-1.png"
+                    width={900}
+                    height={900}
+                    src="/img/glasses/glasses-8.png"
                     alt=""
                     className="h-full w-full rounded-lg object-contain"
                   />
@@ -185,9 +185,9 @@ export default function Home() {
 
                 <div className="h-40 w-full max-w-[350px]">
                   <Image
-                    width={300}
-                    height={300}
-                    src="/img/glasses/glasses-1.png"
+                    width={900}
+                    height={900}
+                    src="/img/glasses/glasses-7.png"
                     alt=""
                     className="h-full w-full rounded-lg object-contain"
                   />
@@ -196,9 +196,9 @@ export default function Home() {
               <div className="flex h-28 w-full items-center justify-center max-md:gap-4 md:px-16">
                 <div className="h-40 w-full max-w-[350px]">
                   <Image
-                    width={300}
-                    height={300}
-                    src="/img/glasses/glasses-1.png"
+                    width={900}
+                    height={900}
+                    src="/img/glasses/glasses-8.png"
                     alt=""
                     className="h-full w-full rounded-lg object-contain"
                   />
@@ -206,9 +206,9 @@ export default function Home() {
 
                 <div className="h-40 w-full max-w-[350px]">
                   <Image
-                    width={300}
-                    height={300}
-                    src="/img/glasses/glasses-1.png"
+                    width={900}
+                    height={900}
+                    src="/img/glasses/glasses-7.png"
                     alt=""
                     className="h-full w-full rounded-lg object-contain"
                   />
@@ -216,9 +216,9 @@ export default function Home() {
 
                 <div className="h-40 w-full max-w-[350px]">
                   <Image
-                    width={300}
-                    height={300}
-                    src="/img/glasses/glasses-1.png"
+                    width={900}
+                    height={900}
+                    src="/img/glasses/glasses-8.png"
                     alt=""
                     className="h-full w-full rounded-lg object-contain"
                   />
@@ -227,9 +227,9 @@ export default function Home() {
               <div className="flex h-28 w-full items-center justify-center max-md:gap-4 md:px-16">
                 <div className="h-40 w-full max-w-[350px]">
                   <Image
-                    width={300}
-                    height={300}
-                    src="/img/glasses/glasses-1.png"
+                    width={900}
+                    height={900}
+                    src="/img/glasses/glasses-7.png"
                     alt=""
                     className="h-full w-full rounded-lg object-contain"
                   />
@@ -237,9 +237,9 @@ export default function Home() {
 
                 <div className="h-40 w-full max-w-[350px]">
                   <Image
-                    width={300}
-                    height={300}
-                    src="/img/glasses/glasses-1.png"
+                    width={900}
+                    height={900}
+                    src="/img/glasses/glasses-8.png"
                     alt=""
                     className="h-full w-full rounded-lg object-contain"
                   />
@@ -247,9 +247,9 @@ export default function Home() {
 
                 <div className="h-40 w-full max-w-[350px]">
                   <Image
-                    width={300}
-                    height={300}
-                    src="/img/glasses/glasses-1.png"
+                    width={900}
+                    height={900}
+                    src="/img/glasses/glasses-7.png"
                     alt=""
                     className="h-full w-full rounded-lg object-contain"
                   />
