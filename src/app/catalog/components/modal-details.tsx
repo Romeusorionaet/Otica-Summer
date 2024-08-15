@@ -3,11 +3,56 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { GlassesProps } from './main'
 import { OrderProduct } from '@/components/order-product'
+import { useRouter } from 'next/navigation'
+import glasses from '@/lib/glasses.json'
+import { Metadata } from 'next'
 
 interface Props {
   showDetails: boolean
   setShowDetails: (value: boolean) => void
   selectedGlasses: GlassesProps
+}
+
+interface Props {
+  params: {
+    q: string
+  }
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const result = glasses.find((item) => item.id === params.q)
+
+  if (!result) {
+    return {
+      title: 'Produto não encontrado',
+      description: 'O produto que você está procurando não foi encontrado.',
+      openGraph: {
+        description: 'O produto que você está procurando não foi encontrado.',
+        images: ['https://i.postimg.cc/pdXfCf26/logo.png'],
+        locale: 'pt-br',
+        type: 'website',
+      },
+    }
+  }
+
+  const product: GlassesProps = result
+
+  return {
+    title: product.type,
+    description: product.description,
+    openGraph: {
+      description: product.description,
+      images: [
+        {
+          url: product.img || '',
+          width: 900,
+          height: 900,
+        },
+      ],
+      locale: 'pt-br',
+      type: 'website',
+    },
+  }
 }
 
 export function ModalDetails({
@@ -26,6 +71,14 @@ export function ModalDetails({
     setZoomPosition({ x, y })
   }
 
+  const router = useRouter()
+
+  const handleCloseModal = () => {
+    setShowDetails(false)
+
+    router.push('/catalog')
+  }
+
   return (
     <section
       data-value={showDetails}
@@ -33,7 +86,7 @@ export function ModalDetails({
     >
       <button
         autoFocus
-        onClick={() => setShowDetails(false)}
+        onClick={() => handleCloseModal()}
         className="absolute right-2 top-2 z-10 md:right-4 md:top-4"
       >
         <X size={28} />

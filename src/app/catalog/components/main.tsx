@@ -4,9 +4,10 @@ import { ControlButtonsPagination } from '@/components/control-buttons-paginatio
 import Image from 'next/image'
 import { Pagination } from '@/utils/pagination'
 import glasses from '@/lib/glasses.json'
-import { Suspense, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { ModalDetails } from './modal-details'
 import { FormInputSearch } from '@/components/form-input-search'
+import { useRouter, useSearchParams } from 'next/navigation'
 
 export interface GlassesProps {
   id: string
@@ -29,10 +30,28 @@ export function Main() {
     11,
   )
 
+  const router = useRouter()
+  const searchParams = useSearchParams()
+
+  const query = searchParams.get('q')
+
   const handleShowDetails = (item: GlassesProps) => {
     setSelectedGlasses(item)
     setShowDetails(true)
+
+    router.push(`/catalog?q=${item.id}`)
   }
+
+  useEffect(() => {
+    if (query) {
+      setShowDetails(true)
+      const uniqueGlasses = glasses.find((item) => item.id === query)
+
+      if (uniqueGlasses) {
+        setSelectedGlasses(uniqueGlasses)
+      }
+    }
+  }, [query])
 
   const handleSubmit = async (query: string) => {
     if (query) {
@@ -100,6 +119,7 @@ export function Main() {
           showDetails={showDetails}
           setShowDetails={setShowDetails}
           selectedGlasses={selectedGlasses}
+          params={{ q: selectedGlasses.id }}
         />
       )}
     </main>
