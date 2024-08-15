@@ -12,8 +12,24 @@ export function CarouselAutoSlider() {
       src: '/img/glasses/glasses-1.png',
     },
     {
-      id: '54d68r',
+      id: '34d68r',
       src: '/img/glasses/glasses-2.png',
+    },
+    {
+      id: '548i8r',
+      src: '/img/glasses/glasses-3.png',
+    },
+    {
+      id: '85d68r',
+      src: '/img/glasses/glasses-4.png',
+    },
+    {
+      id: '53k68r',
+      src: '/img/glasses/glasses-5.png',
+    },
+    {
+      id: '5d687r',
+      src: '/img/glasses/glasses-6.png',
     },
   ]
 
