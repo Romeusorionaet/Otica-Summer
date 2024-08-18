@@ -12,7 +12,7 @@
   /*  #fourth-section */
 
   #fourth-section > article {
-    @apply flex h-96 w-80 flex-col items-center justify-start gap-10 rounded-lg bg-clRef_5 p-2
+    @apply flex h-[410px] w-80 flex-col items-center justify-start gap-10 rounded-lg bg-clRef_5 p-2
   }
 
   #fourth-section > article > h3 {

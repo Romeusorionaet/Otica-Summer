@@ -72,27 +72,27 @@ export function Main() {
         <FormInputSearch handleSubmit={handleSubmit} />
       </div>
 
-      <section className="mx-auto flex w-full max-w-[1000px] flex-col gap-10 p-4">
-        <div className="flex flex-wrap items-center justify-center gap-4">
+      <section className="mx-auto flex w-full max-w-[1000px] flex-col gap-10 p-1">
+        <div className="flex flex-wrap items-center justify-center gap-2">
           {currentData().map((item: GlassesProps) => (
             <button
               key={item.id}
               onClick={() => handleShowDetails(item)}
-              className="cursor-pointer duration-700 hover:scale-105"
+              className="w-40 cursor-pointer duration-700 hover:scale-105"
             >
-              <header className="h-32 w-full">
+              <div className="h-32 w-full">
                 <Image
-                  width={300}
-                  height={300}
+                  width={500}
+                  height={500}
                   src={item.img}
                   alt={item.description}
                   className="h-full w-full rounded-lg"
                 />
-              </header>
+              </div>
 
-              <footer className="flex justify-around">
+              <div className="flex justify-around">
                 <span>{item.type}</span>
-              </footer>
+              </div>
             </button>
           ))}
         </div>

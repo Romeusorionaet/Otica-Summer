@@ -79,6 +79,36 @@ export function ModalDetails({
     router.push('/catalog')
   }
 
+  const handleShareProduct = async (id: string) => {
+    const fullUrlProduct = `${process.env.NEXT_PUBLIC_SITE_URL}/catalog?q=${id}`
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Confira este produto!',
+          text: `Veja este produto incrível: ${selectedGlasses.type}`,
+          url: fullUrlProduct,
+        })
+      } catch (error) {
+        console.error('Erro ao compartilhar o produto:', error)
+      }
+    } else {
+      copyLinkToClipboard(fullUrlProduct)
+    }
+  }
+
+  const copyLinkToClipboard = (url: string) => {
+    navigator.clipboard
+      .writeText(url)
+      .then(() => {
+        alert('Link copiado para a área de transferência!')
+      })
+      .catch((error) => {
+        console.error('Falha ao copiar o link:', error)
+        alert('Não foi possível copiar o link. Tente novamente.')
+      })
+  }
+
   return (
     <section
       data-value={showDetails}
@@ -92,7 +122,7 @@ export function ModalDetails({
         <X size={28} />
       </button>
 
-      <article className="relative flex w-full items-center justify-center gap-2">
+      <div className="relative flex w-full items-center justify-center gap-2">
         <div
           className="relative h-full w-1/2"
           onMouseMove={handleMouseMove}
@@ -119,8 +149,10 @@ export function ModalDetails({
           )}
         </div>
 
-        <div className="w-1/2 space-y-4">
-          <h3 className="font-bold">{selectedGlasses.type}</h3>
+        <article className="w-1/2 space-y-4">
+          <header>
+            <h3 className="font-bold">{selectedGlasses.type}</h3>
+          </header>
 
           <div className="min-h-[200px] md:h-56">
             <p className="text-sm md:text-base">
@@ -131,10 +163,13 @@ export function ModalDetails({
           <footer className="mt-4 flex items-center justify-start gap-4 text-sm">
             <OrderProduct id={selectedGlasses.id} />
           </footer>
-        </div>
-      </article>
+        </article>
+      </div>
 
-      <button className="absolute bottom-4 text-blue-500 max-md:left-4 md:bottom-4 md:right-4">
+      <button
+        onClick={() => handleShareProduct(selectedGlasses.id)}
+        className="absolute bottom-4 text-blue-500 max-md:left-4 md:bottom-4 md:right-4"
+      >
         <ShareNetwork size={28} />
       </button>
     </section>
