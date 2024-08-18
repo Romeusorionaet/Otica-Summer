@@ -1,8 +1,11 @@
 'use client'
 
-export function OrderProduct() {
-  const fullUrlProduct =
-    typeof window !== 'undefined' ? window.location.href : ''
+interface Props {
+  id: string
+}
+
+export function OrderProduct({ id }: Props) {
+  const fullUrlProduct = `${process.env.NEXT_PUBLIC_SITE_URL}/catalog?q=${id}`
 
   async function handleOrderProduct() {
     const numeroWhatsApp = '55084981127596'

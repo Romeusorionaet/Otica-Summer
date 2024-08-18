@@ -129,7 +129,7 @@ export function ModalDetails({
           </div>
 
           <footer className="mt-4 flex items-center justify-start gap-4 text-sm">
-            <OrderProduct />
+            <OrderProduct id={selectedGlasses.id} />
           </footer>
         </div>
       </article>
