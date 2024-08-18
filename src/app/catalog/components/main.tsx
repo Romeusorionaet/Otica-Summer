@@ -4,7 +4,7 @@ import { ControlButtonsPagination } from '@/components/control-buttons-paginatio
 import Image from 'next/image'
 import { Pagination } from '@/utils/pagination'
 import glasses from '@/lib/glasses.json'
-import { Suspense, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ModalDetails } from './modal-details'
 import { FormInputSearch } from '@/components/form-input-search'
 import { useRouter, useSearchParams } from 'next/navigation'
@@ -68,11 +68,9 @@ export function Main() {
 
   return (
     <main className="pt-56">
-      <Suspense fallback={null}>
-        <div className="my-10 px-1">
-          <FormInputSearch handleSubmit={handleSubmit} />
-        </div>
-      </Suspense>
+      <div className="my-10 px-1">
+        <FormInputSearch handleSubmit={handleSubmit} />
+      </div>
 
       <section className="mx-auto flex w-full max-w-[1000px] flex-col gap-10 p-4">
         <div className="flex flex-wrap items-center justify-center gap-4">
@@ -93,7 +91,6 @@ export function Main() {
               </header>
 
               <footer className="flex justify-around">
-                <span>{item.price} R$</span>
                 <span>{item.type}</span>
               </footer>
             </button>

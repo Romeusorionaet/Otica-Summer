@@ -108,7 +108,7 @@ export function ModalDetails({
           />
           {isZoomVisible && (
             <div
-              className="absolute -top-[410px] left-44 z-10 h-64 w-64 rounded-lg border border-gray-400 bg-cover bg-no-repeat md:-top-36 md:left-[450px]"
+              className="absolute -top-[410px] left-44 z-10 h-64 w-64 rounded-lg border border-gray-400 bg-cover bg-no-repeat md:-top-32 md:left-[450px]"
               style={{
                 backgroundImage: `url(${selectedGlasses.img})`,
                 backgroundPosition: `${zoomPosition.x}% ${zoomPosition.y}%`,
@@ -122,11 +122,13 @@ export function ModalDetails({
         <div className="w-1/2 space-y-4">
           <h3 className="font-bold">{selectedGlasses.type}</h3>
 
-          <p className="text-sm md:text-base">{selectedGlasses.description}</p>
+          <div className="min-h-[200px] md:h-56">
+            <p className="text-sm md:text-base">
+              {selectedGlasses.description}
+            </p>
+          </div>
 
           <footer className="mt-4 flex items-center justify-start gap-4 text-sm">
-            <span className="text-green-500">{selectedGlasses.price} $</span>
-
             <OrderProduct />
           </footer>
         </div>
