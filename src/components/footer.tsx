@@ -16,7 +16,7 @@ export function Footer() {
 
             <div className="flex gap-4">
               <a
-                href="https://wa.me/5584981127596?text=Ol%C3%A1,%20vim%20pelo%20site!"
+                href="https://wa.me/5584991264571?text=Ol%C3%A1,%20vim%20pelo%20site!"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -24,7 +24,7 @@ export function Footer() {
               </a>
 
               <a
-                href="https://www.instagram.com/romeusoaresdesouto/"
+                href="https://www.instagram.com/oticasummer_rn/?igsh=MXMydjJxY3VnZjhyZg%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
               >

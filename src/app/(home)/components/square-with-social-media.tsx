@@ -6,7 +6,7 @@ export function SquareWithSocialMedia() {
     <div>
       <div className="absolute left-28 top-96 flex h-20 w-20 items-center justify-center rounded-md bg-green-500 duration-700 hover:scale-105 max-sm:left-10">
         <a
-          href="https://wa.me/5584981127596?text=Ol%C3%A1,%20vim%20pelo%20site!"
+          href="https://wa.me/5584991264571?text=Ol%C3%A1,%20vim%20pelo%20site!"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -15,7 +15,7 @@ export function SquareWithSocialMedia() {
       </div>
       <div className="absolute right-20 top-96 flex h-16 w-16 items-center justify-center rounded-md bg-pink-600 duration-700 hover:scale-105">
         <a
-          href="https://www.instagram.com/romeusoaresdesouto/"
+          href="https://www.instagram.com/oticasummer_rn/?igsh=MXMydjJxY3VnZjhyZg%3D%3D"
           target="_blank"
           rel="noopener noreferrer"
         >

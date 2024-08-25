@@ -8,7 +8,7 @@ export function OrderProduct({ id }: Props) {
   const fullUrlProduct = `${process.env.NEXT_PUBLIC_SITE_URL}/catalog?q=${id}`
 
   async function handleOrderProduct() {
-    const numeroWhatsApp = '55084981127596'
+    const numeroWhatsApp = '55084991264571'
     const message = `Olá, tenho interesse no item:\n` + `${fullUrlProduct}`
 
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(
