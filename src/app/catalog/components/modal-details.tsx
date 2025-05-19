@@ -115,6 +115,7 @@ export function ModalDetails({
       className="fixed left-1/2 top-1/2 z-20 hidden w-full -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-clRef_2 p-2 data-[value=true]:block md:w-[600px]"
     >
       <button
+        type="button"
         autoFocus
         onClick={() => handleCloseModal()}
         className="absolute right-2 top-2 z-10 md:right-4 md:top-4"

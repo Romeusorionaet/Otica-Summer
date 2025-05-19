@@ -9,7 +9,7 @@ export function OrderProduct({ id }: Props) {
 
   async function handleOrderProduct() {
     const numeroWhatsApp = '55084991264571'
-    const message = `Olá, tenho interesse no item:\n` + `${fullUrlProduct}`
+    const message = `Olá, tenho interesse no item:\n${fullUrlProduct}`
 
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(
       message,
@@ -22,6 +22,7 @@ export function OrderProduct({ id }: Props) {
 
   return (
     <button
+      type="button"
       onClick={() => handleOrderProduct()}
       className="rounded-lg border border-black p-1"
     >
