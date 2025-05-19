@@ -22,9 +22,9 @@ export default function Home() {
       <main className="overflow-hidden">
         <section
           id="first-section"
-          className="mx-auto flex min-h-[1000px] w-full max-w-[1680px] flex-col bg-clRef_1 max-md:items-center md:h-[970px] md:flex-row md:gap-4 md:bg-gradient-to-r"
+          className="mx-auto flex min-h-[1000px] w-full max-w-[1900px] flex-col bg-clRef_1 max-lg:flex-col-reverse max-lg:items-center md:h-[970px] lg:flex-row lg:gap-4 lg:bg-gradient-to-r"
         >
-          <section className="h-[900px] min-w-[300px] pt-64">
+          <section className="h-[500px] min-w-[300px] pt-10 lg:h-[900px] lg:pt-64">
             <h2 className="mb-10 text-center text-4xl font-bold md:ml-4 md:text-5xl">
               <span className="text-clVRef">Veja</span> o mundo com clareza e
               estilo
@@ -37,87 +37,36 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="relative flex h-screen w-full flex-col items-center justify-center bg-clRef_2 p-4 md:h-[980px] md:justify-evenly">
-            <section className="gallery md:mt-28">
-              <div className="gallery-item flex flex-col bg-blue-500">
-                <div className="h-full w-full">
-                  <Image
-                    width={900}
-                    height={900}
-                    src="/img/people-models/model-10.png"
-                    alt=""
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-              </div>
-
-              <div className="gallery-item">
-                <Image
-                  width={900}
-                  height={900}
-                  src="/img/glasses/glasses-2.png"
-                  alt=""
-                  className="h-full w-full object-cover"
-                />
-              </div>
-
-              <div className="gallery-item">
-                <Image
-                  width={900}
-                  height={900}
-                  src="/img/people-models/model-7.png"
-                  alt=""
-                  className="h-full w-full object-cover"
-                />
-              </div>
-
-              <div className="gallery-item flex gap-2">
-                <div className="h-full w-full">
-                  <Image
-                    width={900}
-                    height={900}
-                    src="/img/people-models/model-9.png"
-                    alt=""
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="h-full w-full">
-                  <Image
-                    width={900}
-                    height={900}
-                    src="/img/glasses/glasses-2.png"
-                    alt=""
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-                <div className="h-full w-full">
-                  <Image
-                    width={900}
-                    height={900}
-                    src="/img/people-models/model-8.png"
-                    alt=""
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-              </div>
-            </section>
-
-            <div className="absolute bottom-0 flex w-full justify-center p-4">
+          <section className="relative flex w-full flex-col items-center justify-center bg-clRef_2 max-lg:pt-48 lg:h-[980px] lg:justify-evenly">
+            <div className="group absolute bottom-2 left-2 flex w-56 justify-center rounded-md bg-clRef_5 p-4">
               <Link
                 href="https://wa.me/5584981127596?text=Ol%C3%A1,%20vim%20pelo%20site!"
                 rel="noopener noreferrer"
                 target="_blank"
-                className="relative z-10 border-b border-clRef_5 p-2 duration-700 hover:scale-105"
+                className="relative z-10 border-b border-clRef_2 p-2 text-clRef_2 duration-700 group-hover:scale-105"
               >
-                Agende sua Consulta
+                <span className="inline-block">Agende sua Consulta</span>
+                <span className="text-xs">com uns dos nossos atendentes</span>
               </Link>
             </div>
+
+            <div className="h-full w-full">
+              <Image
+                width={1000}
+                height={1000}
+                src="/img/decorations/design-top-dashboard.png"
+                alt=""
+                className="h-full w-full object-contain md:object-cover"
+              />
+            </div>
+
+            <div className="h-2 w-full rounded-md bg-gradient-to-r from-clVRef to-clRef_4" />
           </section>
         </section>
 
         <section
           id="second-section"
-          className="mx-auto mt-24 flex w-full max-w-[1680px] flex-col items-center justify-center gap-10 rounded-lg bg-clRef_5 p-4 md:mt-44 md:h-[500px] md:flex-row"
+          className="mx-auto mt-44 flex w-full max-w-[1680px] flex-col items-center justify-center gap-10 rounded-lg bg-clRef_5 p-4 max-lg:pt-16 md:mt-44 md:h-[500px] md:flex-row"
         >
           <div className="h-full w-96">
             <Image
